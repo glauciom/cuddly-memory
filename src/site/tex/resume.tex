@@ -1,0 +1,64 @@
+\documentclass[10pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+\usepackage{multicol}
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+
+\newcommand{\myname}{\textbf{G. G. de M. Melo}}
+\usepackage{datenumber, fp}
+\newcounter{birthday}
+\newcounter{today}
+\setmydatenumber{birthday}{1982}{08}{26}
+\setmydatenumber{today}{\the\year}{\the\month}{\the\day}
+\FPsub\result{\thetoday}{\thebirthday}
+\FPdiv\myage{\result}{365.2425}
+\FPtrunc\myage{\myage}{0}
+
+\hypersetup{%
+  colorlinks=false,% hyperlinks will be black
+  linkbordercolor=red,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+\colorlet{awesome}{awesome-concrete}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{G. G. de M.}{Melo}
+\position{[Computer Scientist]}
+
+\input{resume/0.tablecommands.tex}
+
+\begin{document}
+
+\makecvheader
+% \begin{picture}(0,0)
+%     \put(445,28){\frame{\includegraphics[width=7em]{resume/cv.jpg}}}
+% \end{picture}
+
+\makecvfooter
+  {\today}
+  {\myname~~~·~~~\href{https://www.linkedin.com/in/glauciom/}{about.me}}
+  {\thepage}
+
+\newline
+\newline
+\newline
+\newline
+ \input{resume/1.summary.tex}
+\newline
+\newline
+\newline
+\newline
+ \input{resume/2.accomplisments.tex}
+\newline
+\newline
+\newline
+\newline
+ \input{resume/3.interests.tex}
+ \input{resume/4.skills.tex}
+ \input{resume/5.experience.tex}
+ \input{resume/6.education.tex}
+
+\end{document}

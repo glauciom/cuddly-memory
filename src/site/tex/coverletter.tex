@@ -1,0 +1,74 @@
+\documentclass[11pt, a4paper]{awesome-cv}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-concrete}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=false,
+  linkbordercolor=red,
+  pdfborderstyle={/S/U/W 1}
+}
+
+\input{placeholder.tex}
+
+\recipient
+  {From: \myname}
+  {To: \company~- Recruitment Team}
+\letterdate{\today}
+\lettertitle{Job Application for \job}
+\letteropening{\\Dear \hrmanager,}
+\letterclosing{Sincerely, \\\\ \signature}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {\myname~~~·~~~Cover Letter}
+  {}
+
+\makelettertitle
+
+\begin{cvletter}
+
+The purpose of this letter is to express my interest about your job post at \website~for an experienced IT professional.
+With a Bachelor’s degree in Computer Science and two decades of hands­on experience at several platforms
+and programming languages, creating and implementing software applications throughout all software lifecycle / ecosystems,
+I am confident that I would be a valuable person to \company.
+
+\lettersection{Why \company?}
+
+From the Job Description I've seen at \website, I would say the technologies you have been working are very close to the ones I've been
+working for many years. I have large experience on software platforms, doing several major back-end integrations
+on social media (facebook, twitter and google APIs) as well as payment integration (Stripe, Giftcards), user authentication and media tracking.
+Most of those things were made from scratch, based on micro-services architecture, working
+transparently and ready to scale (both vertically and horizontally).
+
+I also played a leadership role at Avaya (Solution Architect),
+with contact centre products and IVR technologies, coordinating a software development team in India and doing follow up through daily calls.
+During this time, I was part of the team responsible for the
+HP Global contact Centre migration from Cisco to Avaya products.
+
+Besides, I have plenty of experience on several different businesses, which can bring to \company~different standpoints
+and best practices from different markets.
+
+\lettersection{Why Me?}
+
+Reading your Job Description and bringing to the table the will on putting my brain and hands available for \company,
+I strongly believe that \company~ is the best match for my professional expectations.
+Also, in order to introduce myself properly in terms of source code, once you are looking for someone
+with coding skills, you can see the repositories I have special interest and a few code samples
+I've contributed \href{https://github.com/glauciom}{at github}.
+
+From my \website~ profile and my attached CV, you will be able to get more details
+about the companies / projects I've been working and my overall experience with Computer Science.
+
+Thank you for your time and consideration. I’m looking forward to speak with you about this opportunity.
+
+\end{cvletter}
+\makeletterclosing
+\end{document}
