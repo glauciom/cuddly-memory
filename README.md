@@ -9,7 +9,7 @@ The output will be placed under the folder:
 
 `target/site/resume.pdf`
 
-##Requirements
+## Requirements
 
 - Tex Distribution: MacOS Install -> `brew install Caskroom/cask/mactex`)
 - Tex Distribution: Instructions for Linux Fedora distro
