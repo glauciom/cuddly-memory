@@ -1,8 +1,8 @@
 \usepackage{multirow, tabu}
 \newcommand{\tableline}{\\ \tabucline{2-5}\multicolumn{1}{c|}{}&}
-\newcommand{\ini}{&x&&}
-\newcommand{\inter}{&&x&}
-\newcommand{\avan}{&&&x}
+\newcommand{\ini}{&\drawcircle{black}{2pt}&&}
+\newcommand{\inter}{&&\drawcircle{black}{2pt}&}
+\newcommand{\avan}{&&&\drawcircle{black}{2pt}}
 \newcommand{\nextline}{\\ \tabucline[1pt]{1-5}}
 \newcommand{\finalize}{\nextline}
 \newcommand{\drawheader}{& & \multicolumn{3}{c}{Proficiency} \\ \tabucline[1pt]{3-5} \multicolumn{1}{ c }{}& & B & I & A\nextline}
