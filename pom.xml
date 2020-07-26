@@ -4,7 +4,7 @@
 
 	<groupId>br.com.gm2</groupId>
 	<artifactId>cv-gm2</artifactId>
-	<version>1.3</version>
+	<version>1.4</version>
 
 	<build>
 		<defaultGoal>clean latex:latex</defaultGoal>
